@@ -5,8 +5,6 @@
 ![Transformers](https://img.shields.io/badge/Transformers-4.57.1-FFD21E?logo=huggingface&logoColor=black)
 ![Pandas](https://img.shields.io/badge/Pandas-2.3.3-150458?logo=pandas&logoColor=white)
 ![NumPy](https://img.shields.io/badge/NumPy-2.3.4-013243?logo=numpy&logoColor=white)
-![DuckDB](https://img.shields.io/badge/DuckDB-1.4.1-FFF000?logo=duckdb&logoColor=black)
-![Scikit-Learn](https://img.shields.io/badge/sklearn-1.7.2-F7931E?logo=scikit-learn&logoColor=white)
 
 # SCANNN
 
