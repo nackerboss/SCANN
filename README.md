@@ -90,7 +90,8 @@ Repository
 
 - `agnews_embeddings.h5` — example precomputed, normalized embeddings (HDF5).
 
-#Contributors
+# Contributors
+
 <a href="https://github.com/nackerboss/SCANNN/graphs/contributors">
   <img src="https://camo.githubusercontent.com/f2aa1fd987013e0c261f0eda02150c9a8e62c89c00059d41825d323a61f4060e/68747470733a2f2f636f6e747269622e726f636b732f696d6167653f7265706f3d6e61636b6572626f73732f5343414e4e4e" data-canonical-src="https://contrib.rocks/image?repo=nackerboss/SCANNN" style="max-width: 100%;">
 </a>
