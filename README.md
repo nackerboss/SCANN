@@ -108,8 +108,13 @@ with h5py.File('agnews_embeddings.h5','r') as f:
   - [REAL_MAIN_ScaNN_Embedding_Search_Index.ipynb](REAL_MAIN_ScaNN_Embedding_Search_Index.ipynb)
   - [ScaNN_Embedding_Search_Index.ipynb](ScaNN_Embedding_Search_Index.ipynb)
 
-<a href="https://github.com/othneildrew/Best-README-Template/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=othneildrew/Best-README-Template" alt="contrib.rocks image" />
+### Top contributors:
+
+<a href="https://github.com/nackerboss/SCANNN/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=nackerboss/SCANNN" />
 </a>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+
