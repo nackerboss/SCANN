@@ -18,10 +18,10 @@ IF "%WSL_IP%"=="" (
 ECHO Found WSL IP: %WSL_IP%
 
 :: -----------------------------------------------------
-:: 2. Add the Port Forwarding Rule (Port 2000)
+:: 2. Add the Port Forwarding Rule (Port 8000)
 :: -----------------------------------------------------
-ECHO Adding port proxy rule for 0.0.0.0:2000 ^> %WSL_IP%:2000
-netsh interface portproxy add v4tov4 listenport=2000 listenaddress=0.0.0.0 connectport=2000 connectaddress=%WSL_IP%
+ECHO Adding port proxy rule for 0.0.0.0:8000 ^> %WSL_IP%:8000
+netsh interface portproxy add v4tov4 listenport=8000 listenaddress=0.0.0.0 connectport=8000 connectaddress=%WSL_IP%
 
 ECHO.
 ECHO Port Proxy Rules After Adding:
@@ -36,7 +36,7 @@ ECHO Press any key to DELETE the port proxy rule and EXIT.
 pause > nul
 
 ECHO Deleting port proxy rule...
-netsh interface portproxy delete v4tov4 listenaddress=0.0.0.0 listenport=2000
+netsh interface portproxy delete v4tov4 listenaddress=0.0.0.0 listenport=8000
 
 ECHO.
 ECHO Port Proxy Rules After Deleting:
