@@ -133,7 +133,7 @@ def search(query: SearchQuery):
     indices, distances = searcher.search(q_emb, final_num_neighbors=final_k)
 
     elapsed = (time.time()-start)*1000
-
+    print(query,"time taked:",elapsed)
     # Cast idx to int to avoid numpy.uint32 TypeError
     results = [{"rank": i+1, "text": dataset_texts[int(idx)], "similarity": float(d), "dataset_index": int(idx)}
                for i, (idx, d) in enumerate(zip(indices, distances))]
@@ -201,4 +201,6 @@ def benchmark(req: BenchmarkRequest):
 if __name__ == "__main__":
     # Removed ngrok setup.
     # This runs the FastAPI server locally on http://127.0.0.1:8000
+    os.system("cls")
+    print("SERVER".center(100,"-"))
     uvicorn.run(app, host="0.0.0.0", port=8000)
