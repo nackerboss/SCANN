@@ -16,8 +16,8 @@ SCANN is a compact, reproducible workspace for:
 - benchmarking retrieval quality vs exact search.
 
 Repository layout
-- `ScaNN_Embedding_Search_Index.ipynb` — benchmark notebook.
-- `ScaNN_Embedding_Search_Index_-_Demo_and_Benchmarking.ipynb` — demo notebook with interactive widgets and shorter examples.
+- `ScaNN_Embedding_Search_Index.ipynb` — simple demo notebook.
+- `ScaNN_Embedding_Search_Index_-_Demo_and_Benchmarking.ipynb` — full demo notebook with benchmarking tools.
 - `agnews_embeddings.h5` — example precomputed, normalized embeddings (HDF5).
 - `scann-env/` — optional reference Python virtual environment included in the workspace.
 - `frontend/` — optional React + Vite demo for interactive search.
