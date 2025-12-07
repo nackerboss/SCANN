@@ -101,7 +101,7 @@ License & credits
 - Uses SentenceTransformers, ScaNN, and Hugging Face datasets — see the corresponding projects for license details.
 
 Repository
-- https://github.com/nackerboss/SCANNN
+- https://github.com/nackerboss/SCANN
 - `ScaNN_Embedding_Search_Index.ipynb` — quick demo notebook.
 
 - `ScaNN_Embedding_Search_Index_-_Demo_and_Benchmarking.ipynb` — Full demo notebook; contains arbitrary queries, and benchmark tools.
@@ -110,6 +110,6 @@ Repository
 
 # Contributors
 
-<a href="https://github.com/nackerboss/SCANNN/graphs/contributors">
+<a href="https://github.com/nackerboss/SCANN/graphs/contributors">
   <img src="https://camo.githubusercontent.com/f2aa1fd987013e0c261f0eda02150c9a8e62c89c00059d41825d323a61f4060e/68747470733a2f2f636f6e747269622e726f636b732f696d6167653f7265706f3d6e61636b6572626f73732f5343414e4e4e" data-canonical-src="https://contrib.rocks/image?repo=nackerboss/SCANNN" style="max-width: 100%;">
 </a>
