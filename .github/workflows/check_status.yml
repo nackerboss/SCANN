@@ -19,7 +19,7 @@ jobs:
       - name: Check URL and Update Badge
         run: |
           # --- Configuration ---
-          TARGET_URL="[http://scann.ddns.net:8000/badge](http://scann.ddns.net:8000/badge)"
+          TARGET_URL="http://scann.ddns.net:8000/badge"
           
           # Online Image
           IMG_ONLINE="[https://img.shields.io/badge/STATUS-online-green](https://img.shields.io/badge/STATUS-online-green)"
