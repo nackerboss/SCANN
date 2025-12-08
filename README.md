@@ -1,3 +1,9 @@
+# WEB
+<img src="https://img.shields.io/badge/dynamic/json?url=http%3A%2F%2Fscann.ddns.net%3A8000%2Fbadge&query=%24.message&label=STATUS&color=green"
+     alt="Dynamic Status Badge"
+     onerror="this.onerror=null; this.src='https://img.shields.io/badge/STATUS-offline-red?link=mailto%3Aminh.mangbachkhoahochiminh%40hcmut.edu.vn'">
+
+# Tech stack
 
 ![Python](https://img.shields.io/badge/Python-3.x-blue?logo=python&logoColor=white)
 ![FastAPI](https://img.shields.io/badge/FastAPI-0.123.0-009688?logo=fastapi&logoColor=white)
