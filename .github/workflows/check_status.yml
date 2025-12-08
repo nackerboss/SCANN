@@ -45,7 +45,7 @@ jobs:
 
           # FIX 2: Safe Sed Command
           # Only replaces text strictly between the start/end comments
-          sed -i "s|.*|$BADGE|g" README.md
+          sed -i "s|![Status]*|$BADGE|g" README.md
 
       - name: Commit and Push changes
         run: |
