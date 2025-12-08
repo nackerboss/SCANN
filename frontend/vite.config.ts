@@ -6,5 +6,6 @@ export default defineConfig({
   server: {
     port: 2000, // Set your desired port number
     host: '0.0.0.0',
+    allowedHosts: ['scann.ddns.net'],
   },
 });

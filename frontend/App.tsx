@@ -2,7 +2,7 @@ import React from 'react';
 import { SearchSection } from './components/SearchSection';
 
 export default function App() {
-  const baseUrl = "http://171.227.46.168:8000";
+  const baseUrl = "http://scann.ddns.net:8000";
 
   return (
     <div className="min-h-screen bg-slate-900 text-slate-200 font-sans selection:bg-indigo-500 selection:text-white">

@@ -4,3 +4,6 @@ agnews_embeddings.h5
 web.md
 __pycache__/main.cpython-312.pyc
 frontend/package-lock.json
+cert.pem
+key.pem
+agnews_embeddings.h5
