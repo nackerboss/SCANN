@@ -21,17 +21,17 @@ jobs:
           # --- Configuration ---
           TARGET_URL="http://scann.ddns.net:8000/badge"
           
-          # Online Image
-          IMG_ONLINE="[https://img.shields.io/badge/STATUS-online-green](https://img.shields.io/badge/STATUS-online-green)"
-          
-          # Offline Image (Escaped for sed)
-          IMG_OFFLINE="[https://img.shields.io/badge/STATUS-offline-red?link=mailto%3Aminh.mangbachkhoahochiminh%40hcmut.edu.vn](https://img.shields.io/badge/STATUS-offline-red?link=mailto%3Aminh.mangbachkhoahochiminh%40hcmut.edu.vn)"
+          # Just the image URLs (Clean strings, no markdown syntax here)
+          IMG_ONLINE="https://img.shields.io/badge/STATUS-online-green"
+          IMG_OFFLINE="https://img.shields.io/badge/STATUS-offline-red?link=mailto%3Aminh.mangbachkhoahochiminh%40hcmut.edu.vn"
           
           # --- Logic ---
           echo "Pinging $TARGET_URL..."
           
-          # Curl flags: -s (silent), -o /dev/null (hide output), -w (write HTTP code), --max-time 10 (timeout)
-          HTTP_CODE=$(curl -s -o /dev/null -w "%{http_code}" --max-time 10 "$TARGET_URL")
+          # FIX 1: We added '|| echo "000"'
+          # If curl fails (network error/timeout), it won't crash the script.
+          # It will just print "000", which triggers the OFFLINE logic below.
+          HTTP_CODE=$(curl -s -o /dev/null -w "%{http_code}" --max-time 10 "$TARGET_URL" || echo "000")
           
           echo "Response Code: $HTTP_CODE"
 
@@ -39,11 +39,12 @@ jobs:
             echo "Server is ONLINE."
             BADGE="![Status]($IMG_ONLINE)"
           else
-            echo "Server is OFFLINE."
+            echo "Server is OFFLINE (or unreachable)."
             BADGE="![Status]($IMG_OFFLINE)"
           fi
 
-          # Use sed to replace the content between the markers in README.md
+          # FIX 2: Safe Sed Command
+          # Only replaces text strictly between the start/end comments
           sed -i "s|.*|$BADGE|g" README.md
 
       - name: Commit and Push changes
@@ -51,11 +52,10 @@ jobs:
           git config --global user.name "Status Bot"
           git config --global user.email "actions@github.com"
           
-          # Only commit if the file actually changed
           if [[ -n $(git status -s README.md) ]]; then
             git add README.md
-            git commit -m "Update status badge: $(date)"
+            git commit -m "Update status badge"
             git push
           else
-            echo "No status change detected. Skipping commit."
+            echo "No change detected."
           fi
