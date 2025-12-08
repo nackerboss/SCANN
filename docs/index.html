@@ -138,6 +138,9 @@
 
             <h3>ScaNN Index Configuration</h3>
             <pre>
+                K_NEIGHBORS = 10
+                TEST_SIZES = [100, 300, 1000, 3000, 10000] # Test size list for benchmarking.
+                
                 num_leaves = max(int(sqrt(num_headlines)), 100)
                 num_leaves_to_search = max(int(num_leaves * 0.05), 10)
                 training_sample_size = min(int(num_headlines * 0.3), num_headlines - 1)
