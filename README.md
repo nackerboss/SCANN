@@ -93,12 +93,9 @@ Troubleshooting & tips
 - If you need GPU inference with SentenceTransformers, install a CUDA-enabled PyTorch build.
 - ScaNN installation may require a platform-specific wheel; consult ScaNN docs if `pip install scann` fails.
 
-Next steps (optional)
-- Add a `requirements.txt` (already added) or `pyproject.toml` for reproducible installs.
-- Add a small runnable script that reproduces the notebook pipeline end-to-end.
 
 License & credits
-- Uses SentenceTransformers, ScaNN, and Hugging Face datasets — see the corresponding projects for license details.
+- Uses SentenceTransformers, ScaNN, and Hugging Face datasets.
 
 Repository
 - https://github.com/nackerboss/SCANN
