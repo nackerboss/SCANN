@@ -1,5 +1,5 @@
 # WEB
-![Status](https://img.shields.io/badge/STATUS-online-green)
+![Status](https://img.shields.io/badge/STATUS-offline-red?link=mailto%3Aminh.mangbachkhoahochiminh%40hcmut.edu.vn)
 
 # Tech stack
 
