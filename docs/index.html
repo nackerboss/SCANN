@@ -136,6 +136,14 @@
                 Using this, we compare brute-force search with our optimized ScaNN index.
             </p>
 
+            <h3>ScaNN Index Configuration</h3>
+            <pre>
+                num_leaves = max(int(sqrt(num_headlines)), 100)
+                num_leaves_to_search = max(int(num_leaves * 0.05), 10)
+                training_sample_size = min(int(num_headlines * 0.3), num_headlines - 1)
+                reordering_candidates = K_NEIGHBORS * 10
+            </pre>
+
             <h3>Index Statistics</h3>
             <ul>
                 <li>Raw embedding memory usage: <strong>3658.45 MB</strong></li>
