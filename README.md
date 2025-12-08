@@ -1,5 +1,5 @@
 # WEB
-<img src="https://img.shields.io/badge/dynamic/json?url=http%3A%2F%2Fscann.ddns.net%3A8000%2Fbadge&query=%24.message&label=STATUS&color=green"
+<img src="http://scann.đns.net:8000/badge"
      alt="Dynamic Status Badge"
      onerror="this.onerror=null; this.src='https://img.shields.io/badge/STATUS-offline-red?link=mailto%3Aminh.mangbachkhoahochiminh%40hcmut.edu.vn'">
 
