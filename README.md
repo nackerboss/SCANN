@@ -69,7 +69,7 @@ Quick example — load embeddings
 ```python
 import h5py
 
-filename = 'glove-50-angular.hdf5'
+filename = '<your file name here>'
 dataset_train = 'train'
 dataset_test = 'test'
 dataset_truth = 'neighbors'
